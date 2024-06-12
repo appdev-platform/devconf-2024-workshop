@@ -1,0 +1,26 @@
+{
+  "name": "devconf-2024-workshop",
+  "private": true,
+  "engines": {
+    "node": ">=20.12.2"
+  },
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "workspaces": {
+    "packages": [
+      "plugins/*"
+    ]
+  },
+  "dependencies": {
+    "@backstage/cli": "^0.26.6"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@3.6.1"
+}

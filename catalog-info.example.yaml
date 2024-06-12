@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: rhdh
+  title: Red Hat Developer Hub
+  description: |
+    An enterprise-grade, open developer platform for building developer portals, containing a supported and opinionated framework.
+  links:
+    - title: Website
+      url: http://developer.redhat.com/rhdh
+    - title: Documentation
+      url: https://backstage.io/docs
+    - title: Learning Path
+      url: https://developers.redhat.com/learn/openshift/install-and-configure-red-hat-developer-hub-and-explore-templating-basics
+  annotations:
+    demo/timezone: Asia/Kolkata
+spec:
+  type: website
+  owner: user:default/guest
+  lifecycle: production

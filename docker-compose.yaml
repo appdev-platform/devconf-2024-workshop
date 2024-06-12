@@ -1,0 +1,12 @@
+services:
+  rhdh:
+    image: quay.io/janus-idp/backstage-showcase:latest
+    volumes:
+      - ./dynamic-plugins-root:/opt/app-root/src/dynamic-plugins-root:z
+      - ./app-config.yaml:/opt/app-root/src/app-config.example.production.yaml:z
+      - ./catalog-info.example.yaml:/opt/app-root/src/catalog-info.example.yaml:z
+    ports:
+      - 7007:7007
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
