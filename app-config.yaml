@@ -31,3 +31,18 @@ catalog:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
       target: ./catalog-info.example.yaml
+
+dynamicPlugins:
+  frontend:
+    rhdh.demo-timezone:
+      mountPoints:
+        - mountPoint: entity.page.overview/cards
+          importName: Clock
+          config:
+            layout:
+              gridColumnEnd:
+                md: "span 4"
+                xs: "span 12"
+            if:
+              allOf:
+                - hasAnnotation: demo/timezone

@@ -1,3 +1,4 @@
+# Add dynamic plugin configuration (copy this to dynamic-plugins.yaml file)
 dynamicPlugins:
   frontend:
     rhdh.demo-timezone:
@@ -6,7 +7,7 @@ dynamicPlugins:
           importName: Clock
           config:
             layout:
-              gridColumnEnd: 1 / -1
+              gridColumn: "1 / -1"
             if:
               anyOf:
                 - hasAnnotation: demo/timezone
